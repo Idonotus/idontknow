@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			@keyframes move {
+				0% {
+					background-position: 0px 0px
+				}
+				100% {
+					background-position: 180px 180px
+				}
+			}
+
+			body {
+				animation: 3s linear infinite reverse move;
+			}
+
+			html {
+				animation: 9s linear infinite move;
+			}
+		</style>
+		<link rel="stylesheet" href="../stylesheets/switchboard.css">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Call dropped | Idontuse</title>
+	</head>
+	<body style="margin: 0px;">
+		<div class="content">
+		<h1>Sorry</h1>
+		<p id="inf">The page you were trying to reach is the page</p>
+		<script>
+			document.onscroll = builddata;
+
+			const eel = document.getElementById("inf");
+			function builddata() {
+				let extendstr = " you were trying to reach is the page"
+				for (let n=1; n < 30; n++) {
+					let windowRelativeBottom = document.documentElement.getBoundingClientRect().bottom;
+					if (windowRelativeBottom > document.documentElement.clientHeight + window.screen.height / 2) break;
+					eel.innerHTML += extendstr;
+					extendstr += extendstr
+				}
+			}
+
+			builddata()
+		</script>
+		</div>
+</body></html>

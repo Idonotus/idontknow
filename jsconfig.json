@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"module": "ESNext",
+		"target": "ES2024",
+		"checkJs": false,
+		"experimentalDecorators": false,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strict": true
+	},
+	"exclude": [
+		"node_modules",
+		"**/node_modules/*"
+	]
+}
