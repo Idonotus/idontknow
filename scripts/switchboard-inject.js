@@ -54,7 +54,7 @@ function visit(map, visitednodes, n, path = []) {
 	const routbounds = data.outbounds || [];
 	for (let i=0; i<expectedlength[data.type]; i++) {
 		const b = routbounds[i];
-		if (b === undefined) {onodes.push(behaviormap["nullendnode"]());continue}
+		if (b === undefined || b === null) {onodes.push(behaviormap["nullendnode"]());continue}
 		if (path.includes(b)) {onodes.push(behaviormap["loopendnode"]());continue}
 		visit(map, visitednodes, b, [...path, b])
 	}

@@ -83,5 +83,28 @@ a {
 }
 
 a:hover {
-	color: #00ff00;
+	color: #ff5555;
+}
+
+svg text {
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	font-stretch:condensed;
+	line-height: 100%;
+	font-size:26.6667px;
+	font-family:Impact;
+	-inkscape-font-specification:'Impact Condensed';
+	text-align:center;
+	writing-mode:lr-tb;
+	direction:ltr;
+	white-space:pre-line;
+	fill:#000000;
+	fill-opacity:1;
+	stroke:#000000;
+	stroke-width:0;
+	stroke-linecap:round;
+	stroke-dasharray:none;
+	stroke-opacity:1;
+	paint-order:markers fill stroke;
 }
